@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+   
+    width: 6em;
+    height: 3em;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input {
+    margin: 2em;
+  width: 7em;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+.container{
+    background: #2ed573;
+}
+section ::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #7bed9f;
+    opacity: .7;
+}
+header ::before {
+   
+    background: #20bf6b;
+
+
+}
