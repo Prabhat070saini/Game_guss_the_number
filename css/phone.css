@@ -23,7 +23,8 @@ input {
     
 }
 .container{
-    background: #2ed573;
+    background: #470394;
+    height: 40vh;
 }
 section ::before {
     content: "";
