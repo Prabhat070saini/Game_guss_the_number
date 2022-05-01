@@ -17,9 +17,15 @@ btn.addEventListener('click', function () {
     }
     else {
         let tamp = guess.value;
-        if (tamp == randomnumber) {
+        let m = isNaN(tamp);
+        if (m) {
+            msg.innerHTML = `Please Enter Number`;
+        }
+        else if (tamp == "") {
+            msg.innerHTML = `Please Enter Valid Number`;
+        }
+        else if (tamp == randomnumber) {
             play = false;
-            console.log("corret");
             msg.innerHTML = `YOU WIN`
             btn.innerHTML = "Start Again";
             guess.classList.toggle("hidden");
